@@ -18,7 +18,7 @@ function Navbar() {
             <a href="#sobre" className="text-xs font-semibold uppercase tracking-widest text-slate-400 hover:text-gold transition-colors">Sobre Nós</a>
             <a href="#depoimentos" className="text-xs font-semibold uppercase tracking-widest text-slate-400 hover:text-gold transition-colors">Depoimentos</a>
             <a href="#contato" className="text-xs font-semibold uppercase tracking-widest text-slate-400 hover:text-gold transition-colors">Contato</a>
-            <a href="https://wa.me/554730358050" target="_blank" rel="noopener noreferrer" className="bg-gold hover:brightness-110 text-slate-950 px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-widest transition-all flex items-center gap-2">
+            <a href="https://wa.me/5547999914979" target="_blank" rel="noopener noreferrer" className="bg-gold hover:brightness-110 text-slate-950 px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-widest transition-all flex items-center gap-2">
               Fale Conosco
             </a>
           </div>
@@ -32,7 +32,7 @@ function Hero() {
   return (
     <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-[#020617]">
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-r from-[#020617] via-[#020617]/95 to-transparent z-10" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#020617] via-[#020617]/80 to-[#020617]/60 md:bg-gradient-to-r md:from-[#020617] md:via-[#020617]/95 md:to-transparent z-10" />
         <img 
           src="/cliente.png" 
           alt="Cliente sendo atendido" 
@@ -66,7 +66,7 @@ function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-lg text-slate-400 mb-8 max-w-xl leading-relaxed"
+            className="text-lg text-slate-300 md:text-slate-400 mb-8 max-w-xl leading-relaxed"
           >
             Empréstimos consignados seguros para aposentados, pensionistas INSS, servidores públicos e saldo FGTS. Mais de 45.000 clientes atendidos em Blumenau.
           </motion.p>
@@ -77,7 +77,7 @@ function Hero() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="flex flex-col sm:flex-row gap-4"
           >
-            <a href="https://wa.me/554730358050" target="_blank" rel="noopener noreferrer" className="bg-gold hover:brightness-110 text-slate-950 px-8 py-4 rounded-xl text-xs sm:text-sm font-bold uppercase tracking-widest transition-all flex items-center justify-center gap-2 group">
+            <a href="https://wa.me/5547999914979" target="_blank" rel="noopener noreferrer" className="bg-gold hover:brightness-110 text-slate-950 px-8 py-4 rounded-xl text-xs sm:text-sm font-bold uppercase tracking-widest transition-all flex items-center justify-center gap-2 group">
               Fazer uma Simulação Grátis
               <ChevronRight className="group-hover:translate-x-1 transition-transform" />
             </a>
@@ -143,8 +143,8 @@ function Services() {
       icon: <Landmark size={24} className="text-gold" />,
     },
     {
-      title: "Antecipação FGTS",
-      description: "Dinheiro rápido na conta usando o saldo do seu FGTS, sem comprometer sua renda mensal.",
+      title: "Empréstimo Consignado para CLT",
+      description: "O Crédito do Trabalhador é um empréstimo consignado com taxas reduzidas para trabalhadores de carteira assinada (CLT), privados, domésticos e MEIs",
       icon: <BriefcaseBusiness size={24} className="text-gold" />,
     },
     {
@@ -355,7 +355,7 @@ function Contact() {
                   <h4 className="font-bold text-lg mb-1 text-white">Contato</h4>
                   <p className="text-slate-400 text-sm">
                     Telefone: (47) 3035-8050<br/>
-                    WhatsApp disponível no mesmo número.
+                    WhatsApp: (47) 99991-4979
                   </p>
                 </div>
               </div>
@@ -374,7 +374,7 @@ function Contact() {
             </div>
             
             <div className="mt-12 flex flex-col sm:flex-row gap-4">
-              <a href="https://wa.me/554730358050" target="_blank" rel="noopener noreferrer" className="bg-gold text-slate-950 px-8 py-4 rounded-xl font-bold uppercase tracking-widest text-xs hover:brightness-110 transition-colors flex items-center justify-center gap-2">
+              <a href="https://wa.me/5547999914979" target="_blank" rel="noopener noreferrer" className="bg-gold text-slate-950 px-8 py-4 rounded-xl font-bold uppercase tracking-widest text-xs hover:brightness-110 transition-colors flex items-center justify-center gap-2">
                 Falar no WhatsApp
               </a>
               <a href="https://www.instagram.com/apoio.solucao" target="_blank" rel="noopener noreferrer" className="glass text-white px-6 py-4 rounded-xl hover:bg-white/10 transition-colors flex items-center justify-center gap-2 text-xs font-bold uppercase tracking-widest">
@@ -420,6 +420,10 @@ function Footer() {
              <a href="#sobre" className="hover:text-gold transition-colors">Sobre</a>
              <a href="#contato" className="hover:text-gold transition-colors">Contato</a>
           </div>
+        </div>
+        <div className="mt-8 pt-8 border-t border-white/5 text-center text-[10px] text-slate-600 space-y-1 font-sans">
+          <p>Soluções Promotora e Serviços Ltda | CNPJ 27.447.295/0001-03</p>
+          <p>Rua 15 de Novembro, Nº 550 sala 601 | Telefone: (47) 3035-4494</p>
         </div>
       </div>
     </footer>
