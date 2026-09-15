@@ -402,8 +402,8 @@ function Contact() {
 
 function Footer() {
   return (
-    <footer className="bg-slate-950 text-slate-500 py-12 border-t border-white/5">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <footer className="bg-slate-950 text-slate-500 pt-12 border-t border-white/5">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex items-center gap-4">
             <img src="/logo1.png" alt="Logo Apoio Solução" className="h-12 sm:h-14 w-auto object-contain opacity-90 drop-shadow-sm" />
@@ -425,6 +425,21 @@ function Footer() {
           <p>Soluções Promotora e Serviços Ltda | CNPJ 27.447.295/0001-03</p>
           <p>Rua 15 de Novembro, Nº 550 sala 601 | Telefone: (47) 3035-4494</p>
         </div>
+      </div>
+
+      <div id="developer-footer" className="border-t border-white/5 py-4 px-4 text-center">
+        <p className="text-xs text-slate-500 leading-normal font-normal">
+          Desenvolvido por Maurício Reis |{" "}
+          <a
+            id="developer-contact-link"
+            href="https://wa.me/5513996733810"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-slate-400 hover:text-gold underline underline-offset-2 transition-colors"
+          >
+            Contato: (13) 99673-3810
+          </a>
+        </p>
       </div>
     </footer>
   );
